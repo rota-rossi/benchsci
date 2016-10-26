@@ -75,6 +75,6 @@ MongoClient.connect(url, function(err, db) {
   })
 })
 
-app.listen(3000,function() {
-	console.log("Starting on port 3000")
+app.listen(process.env.PORT,function() {
+	console.log("Starting on port "+process.env.PORT)
 })
